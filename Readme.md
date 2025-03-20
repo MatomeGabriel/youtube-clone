@@ -41,7 +41,9 @@ youtube-clone
 ├── style.css # Main CSS file
 ├── queries.css # Responsive CSS file
 ├── assets/
-│ └── images # Folder for images, videos, or other media```
+│ └── images # Folder for images, videos, or other media
+
+```
 
 ## How to Use
 
