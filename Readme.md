@@ -34,19 +34,20 @@ This is a simple and modern YouTube landing page made with **HTML** and **CSS**.
 
 ## Folder Structure
 
-youtube-landing-page/
+````
+youtube-clone
 │
 ├── index.html # Main HTML file
 ├── style.css # Main CSS file
 ├── queries.css # Responsive CSS file
 ├── assets/
-│ └── images # Folder for images, videos, or other media
+│ └── images # Folder for images, videos, or other media```
 
 ## How to Use
 
 1. Open the project in your preferred code editor.
 2. Modify the `index.html` and `style.css` files to customize the content or style.
-3. Test the page by opening the index.html file in your browser.
+3. Test the page by opening the `index.html` file in your browser.
 
 ## Compatibility
 
@@ -57,3 +58,4 @@ This project is designed to be compatible with modern browsers that fully suppor
 Gabriel
 
 Feel free to reach out if you have any questions or feedback regarding this project!
+````
