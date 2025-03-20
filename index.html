@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./queries.css" />
+    <title>Youtube Clone</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- LOGO SECTION -->
+      <section class="logo">
+        <span class="menu-icon material-symbols-outlined"> menu </span>
+        <a href="#" class="logo-link">
+          <img
+            class="logo-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
+            alt="Youtube Logo" />
+          <span class="logo-country">ZA</span>
+        </a>
+      </section>
+
+      <!-- SEARCH SECTION -->
+      <section class="search">
+        <form action="" class="search-form">
+          <input class="search-input" type="text" placeholder="Search" />
+          <span class="search-icon material-symbols-outlined"> search </span>
+          <button class="btn-search">
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </form>
+        <button class="btn-mic">
+          <span class="material-symbols-outlined"> mic </span>
+        </button>
+      </section>
+
+      <section class="accounts">
+        <button class="btn-create">
+          <span class="create-icon material-symbols-outlined"> add </span>
+          <span class="btn-create-text">Create</span>
+        </button>
+        <button class="btn-bell">
+          <span class="bell-icon material-symbols-outlined">
+            notifications
+          </span>
+          <div class="bell-notification">1</div>
+        </button>
+
+        <button class="btn-profile">
+          <img
+            class="profile-img"
+            src="https://plus.unsplash.com/premium_photo-1677252438411-9a930d7a5168?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" />
+        </button>
+      </section>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <!-- SECTION MAIN MENU  -->
+        <section class="section-main-menu">
+          <ul class="menu">
+            <li title="Home" class="menu-item active">
+              <a class="menu-item-link" href="">
+                <span class="material-symbols-outlined menu-item-icon">
+                  home
+                </span>
+                <span class="menu-item-text">Home</span>
+              </a>
+            </li>
+            <li title="Shorts" class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined menu-item-icon">
+                  blur_short
+                </span>
+
+                <span class="menu-item-text">Shorts</span>
+              </a>
+            </li>
+            <li title="Subscriptions" class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined menu-item-icon">
+                  subscriptions
+                </span>
+                <span class="menu-item-text">Subscriptions</span>
+              </a>
+            </li>
+            <li class="menu-item not-active">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined menu-item-icon">
+                  account_circle
+                </span>
+                <span>You</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- SECTION YOU -->
+        <section class="section section-you">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="" class="menu-item-link menu-link-bold">
+                <span>You</span>
+                <span class="material-symbols-outlined"> chevron_right </span>
+              </a>
+            </li>
+            <!-- HISTORY -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> history </span>
+                <span class="menu-item-text">History</span>
+              </a>
+            </li>
+            <!-- PlayList -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> playlist_play </span>
+                <span class="menu-item-text">Playlist</span>
+              </a>
+            </li>
+            <!-- Your Videos -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> smart_display </span>
+                <span class="menu-item-text">Your videos</span>
+              </a>
+            </li>
+            <!--Watch Later -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> schedule </span>
+                <span class="menu-item-text">Watch later</span>
+              </a>
+            </li>
+            <!--Watch Later -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> thumb_up </span>
+                <span class="menu-item-text">Liked videos</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <p class="section-title">Subscriptions</p>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <div class="subscription-profile">
+                  <img
+                    src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    class="subscription-img" />
+                </div>
+                <div class="subscription-details">
+                  <span class="subscription-title"> Clever Programmer</span>
+                  <span class="material-symbols-outlined subscription-icon red">
+                    stream
+                  </span>
+                </div>
+              </a>
+            </li>
+            <!-- Fireship -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <div class="subscription-profile">
+                  <img
+                    src="https://yt3.googleusercontent.com/ytc/AIdro_mKzklyPPhghBJQH5H3HpZ108YcE618DBRLAvRUD1AjKNw=s160-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                    class="subscription-img" />
+                </div>
+                <div class="subscription-details">
+                  <span class="subscription-title"> Fireship</span>
+                  <span class="material-symbols-outlined subscription-icon red">
+                    stream
+                  </span>
+                </div>
+              </a>
+            </li>
+            <!-- Fireship -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <div class="subscription-profile">
+                  <img
+                    src="https://yt3.ggpht.com/ytc/AIdro_msW9GXi5NiXd9FSHdq2A8fhGoyYEsJCKbWRJiFIrZIo8Q=s68-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                    class="subscription-img" />
+                </div>
+                <div class="subscription-details">
+                  <span class="subscription-title"> BizarreBub</span>
+                  <span class="material-symbols-outlined subscription-icon red">
+                    stream
+                  </span>
+                </div>
+              </a>
+            </li>
+            <!-- Fireship -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <div class="subscription-profile">
+                  <img
+                    src="https://yt3.googleusercontent.com/UL5gLc7MZLo1gAKn9Y_6FzUru7B7AjVfdcEfmbdB0P2gXnqr4RqydRG_F4A9BGcCIMHSm4yy=s160-c-k-c0x00ffffff-no-rj"
+                    alt=""
+                    class="subscription-img" />
+                </div>
+                <div class="subscription-details">
+                  <span class="subscription-title"> Kevin Samuels</span>
+
+                  <span
+                    class="material-symbols-outlined subscription-icon-small">
+                    radio_button_checked
+                  </span>
+                </div>
+              </a>
+            </li>
+            <!-- Show more -->
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+                <span class="menu-item-text">Show more</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <p class="section-title">Explore</p>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined">
+                  local_fire_department
+                </span>
+                <span class="menu-item-text">Trending</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> library_music </span>
+                <span class="menu-item-text">Music</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined">
+                  stadia_controller
+                </span>
+                <span class="menu-item-text">Gaming</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> newspaper </span>
+                <span class="menu-item-text">News</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> trophy </span>
+                <span class="menu-item-text">Sport</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> podcasts </span>
+                <span class="menu-item-text">Podcast</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="section">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> settings </span>
+                <span class="menu-item-text">Settings</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> flag </span>
+                <span class="menu-item-text">Report history</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> help </span>
+                <span class="menu-item-text">Help</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">
+                <span class="material-symbols-outlined"> feedback </span>
+                <span class="menu-item-text">Send feedback</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- SECTION ABOUT -->
+        <section class="section section-about">
+          <div class="grouped-links">
+            <a href="link">About</a>
+            <a href="link">Press</a>
+            <a href="link">Copyright</a>
+            <a href="link">Contact us</a>
+            <a href="link">Creator</a>
+            <a href="link">Advertise</a>
+            <a href="link">Developers</a>
+          </div>
+
+          <div class="grouped-links grouped-padding">
+            <a href="link">Terms</a>
+            <a href="link">Privacy</a>
+            <a href="link">Policy & Safety</a>
+            <a href="link">How YouTube works</a>
+            <a href="link">Test new features</a>
+          </div>
+        </section>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main">
+        <!-- TAGS SECTION CONTAINER -->
+        <section class="tags-container">
+          <div class="tags">
+            <span class="tag active">All</span>
+            <span class="tag">Music</span>
+            <span class="tag">Gaming</span>
+            <span class="tag">Podcast</span>
+            <span class="tag">Car dealerships</span>
+            <span class="tag">Chillwave</span>
+            <span class="tag">Space Music</span>
+            <span class="tag">Out of space</span>
+            <span class="tag">Chill-out music</span>
+            <span class="tag">Automobile repair shops</span>
+            <span class="tag">Music</span>
+            <span class="tag">Adobe Photoshop</span>
+            <span class="tag"> Modern Auto-pilots </span>
+            <span class="tag"> Autonomous vehicles </span>
+          </div>
+        </section>
+        <!-- Video Grid Section -->
+        <section class="video-grid">
+          <!-- Video 1-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="assets/images/mountains_1.jpg"
+                  alt="Mountain" />
+                <span class="thumbnail-time">14:23</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://plus.unsplash.com/premium_photo-1677252438411-9a930d7a5168?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="" />
+                </a>
+              </div>
+              <!-- VIDEO DETAILS -->
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X
+                      Nandita
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Coke Studio</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>15k views</span><span> &bull;</span
+                    ><span>2 days ago</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 2-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="assets/images/Images_2.jpg"
+                  alt="Mountain" />
+                <span class="thumbnail-time">24:10</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_1/200/200?random=2"
+                    alt="" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      The Science of Happiness: How to Boost Your Mood
+                      Instantly!
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Mindscape</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>5.5M views</span><span> &bull;</span
+                    ><span>2 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 3-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="assets/images/Image_3.jpg"
+                  alt="Mountain" />
+                <span class="thumbnail-time">6:43</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_3/200/200?random=1"
+                    alt="Mountain" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      Surviving 24 Hours with No Technology: Can We Do It?
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Creatives</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>100k views</span><span> &bull;</span
+                    ><span>10 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 4-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="https://picsum.photos/seed/best_4/600/600?random=3"
+                  alt="Mountain" />
+                <span class="thumbnail-time">10:43</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_3/200/200?random=1"
+                    alt="Mountain" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      The Mystery of the Abandoned Places: Ghost Town
+                      Adventures!
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Creatives</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>6.4M views</span><span> &bull;</span
+                    ><span>2 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 5-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="https://picsum.photos/seed/best_11/600/600?random=3"
+                  alt="Mountain" />
+                <span class="thumbnail-time">25:43</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_3/200/200?random=1"
+                    alt="Mountain" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      A Day in the Life of a Professional Dreamer: Chasin...
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Creatives</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>6.4M views</span><span> &bull;</span
+                    ><span>2 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 6-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="https://picsum.photos/seed/best_14/600/600?random=3"
+                  alt="Mountain" />
+                <span class="thumbnail-time">4:43</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_4/200/200?random=1"
+                    alt="Mountain" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      Unlocking the Secrets of Everyday Magic: 10 Life Hack...
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">LOL</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>20K views</span><span> &bull;</span
+                    ><span>2 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 1-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="assets/images/mountains_1.jpg"
+                  alt="Mountain" />
+                <span class="thumbnail-time">14:23</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://plus.unsplash.com/premium_photo-1677252438411-9a930d7a5168?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X
+                      Nandita
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Coke Studio</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>15k views</span><span> &bull;</span
+                    ><span>2 days ago</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 2-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="assets/images/Images_2.jpg"
+                  alt="Mountain" />
+                <span class="thumbnail-time">24:10</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_1/200/200?random=2"
+                    alt="" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      The Science of Happiness: How to Boost Your Mood
+                      Instantly!
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Mindscape</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>5.5M views</span><span> &bull;</span
+                    ><span>2 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 3-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="assets/images/Image_3.jpg"
+                  alt="Mountain" />
+                <span class="thumbnail-time">6:43</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_3/200/200?random=1"
+                    alt="Mountain" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      Surviving 24 Hours with No Technology: Can We Do It?
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Creatives</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>100k views</span><span> &bull;</span
+                    ><span>10 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 4-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="https://picsum.photos/seed/best_4/600/600?random=3"
+                  alt="Mountain" />
+                <span class="thumbnail-time">10:43</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_3/200/200?random=1"
+                    alt="Mountain" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      The Mystery of the Abandoned Places: Ghost Town
+                      Adventures!
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Creatives</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>6.4M views</span><span> &bull;</span
+                    ><span>2 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 5-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="https://picsum.photos/seed/best_11/600/600?random=3"
+                  alt="Mountain" />
+                <span class="thumbnail-time">25:43</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_3/200/200?random=1"
+                    alt="Mountain" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      A Day in the Life of a Professional Dreamer: Chasin...
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">Creatives</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>6.4M views</span><span> &bull;</span
+                    ><span>2 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 6-->
+          <article class="video">
+            <div class="thumbnail">
+              <a href="#" class="thumbnail-link">
+                <img
+                  class="thumbnail-img"
+                  src="https://picsum.photos/seed/best_14/600/600?random=3"
+                  alt="Mountain" />
+                <span class="thumbnail-time">4:43</span>
+              </a>
+            </div>
+            <div class="video-info">
+              <div class="profile">
+                <a href="#" class="profile-link">
+                  <img
+                    class="profile-img"
+                    src="https://picsum.photos/seed/best_4/200/200?random=1"
+                    alt="Mountain" />
+                </a>
+              </div>
+              <div class="video-details">
+                <div class="title-box">
+                  <h3 class="video-title">
+                    <a href="#" class="title-link">
+                      Unlocking the Secrets of Everyday Magic: 10 Life Hack...
+                    </a>
+                  </h3>
+                  <button class="btn">
+                    <span class="material-symbols-outlined title-icon">
+                      more_vert
+                    </span>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <div class="channel-details">
+                    <p class="channel-name">LOL</p>
+                    <span class="material-symbols-outlined channel-icon">
+                      check_circle
+                    </span>
+                  </div>
+                  <p class="views">
+                    <span>20K views</span><span> &bull;</span
+                    ><span>2 months</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
