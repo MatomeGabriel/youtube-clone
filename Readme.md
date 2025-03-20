@@ -34,6 +34,7 @@ This is a simple and modern YouTube landing page made with **HTML** and **CSS**.
 
 ## Folder Structure
 
+```.
 .📂 youtube-clone
 │
 ├── 📄 index.html # Main HTML file
@@ -41,6 +42,8 @@ This is a simple and modern YouTube landing page made with **HTML** and **CSS**.
 ├── 📱 queries.css # Responsive CSS file
 ├── assets/
 │ └── 📸 images # Folder for images, videos, or other media
+
+```
 
 ## How to Use
 
