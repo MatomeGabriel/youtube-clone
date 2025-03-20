@@ -34,13 +34,13 @@ This is a simple and modern YouTube landing page made with **HTML** and **CSS**.
 
 ## Folder Structure
 
-youtube-clone
+.📂 youtube-clone
 │
-├── index.html # Main HTML file
-├── style.css # Main CSS file
-├── queries.css # Responsive CSS file
+├── 📄 index.html # Main HTML file
+├── 🎨 style.css # Main CSS file
+├── 📱 queries.css # Responsive CSS file
 ├── assets/
-│ └── images # Folder for images, videos, or other media
+│ └── 📸 images # Folder for images, videos, or other media
 
 ## How to Use
 
